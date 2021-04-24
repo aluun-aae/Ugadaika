@@ -315,14 +315,15 @@ main() {
   var b = (a21.arr2.reduce((value, element) => value + element));
   var f = (b / a21.arr2.length).round();
   print(f);
-  // print(
-  //     "выберите режим игры \n 1)человек угадывает \n 2)компьютер угадывает \n 3) соревнования");
-  // var rejimigr = stdin.readLineSync()!;
-  // if (rejimigr == "1") {
-  //   a21.computer();
-  // } else if (rejimigr == "2") {
-  //   a21.binar();
-  // }
-  // a21.sorev();
-  a20.sorev();
+  print(
+      "выберите режим игры \n 1)человек угадывает \n 2)компьютер угадывает \n 3) соревнования");
+  var rejimigr = stdin.readLineSync()!;
+  if (rejimigr == "1") {
+    a21.computer();
+  } else if (rejimigr == "2") {
+    a21.binar();
+  }
+  else if(rejimigr =="3"){
+  a21.sorev();
+  }
 }
