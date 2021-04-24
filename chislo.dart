@@ -52,6 +52,8 @@ class Ugadaichislo {
     var a = stdin.readLineSync()!;
     if (a == "3") {
       print("я его угадал на $step шаге");
+      min = 0;
+      max = 100;
     } else if (a == "2") {
       min = random;
       random = Random().nextInt(max - min);
